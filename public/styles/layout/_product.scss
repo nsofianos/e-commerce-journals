@@ -1,0 +1,40 @@
+main {
+  display: flex;
+  justify-content: space-around;
+  margin-top:4em;
+}
+
+.product {
+  height: 28em;
+  border-radius: 12px;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  width:40%;
+
+  p, h1 {
+    margin:0.5em 0 0.5em 0;
+  }
+
+  .price-info {
+    display:flex;
+    flex-direction: column;
+
+    .price {
+      display: flex;
+
+      .background {
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:3em;
+        margin-left:1em;
+        background-color: $clrPaleOrange;
+      }
+    }
+  }
+}
+

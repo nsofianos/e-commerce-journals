@@ -126,6 +126,11 @@ h1 {
   font-weight: 700;
 }
 
+h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
 a {
   text-decoration: none;
   color: #68707d;
@@ -135,8 +140,25 @@ a:hover {
   color: #1d2025;
 }
 
+.accent {
+  color: #ff7d1a;
+}
+
+span {
+  font-weight: 700;
+}
+
+.label {
+  letter-spacing: 2px;
+}
+
 body {
   background-color: white;
+}
+
+main {
+  width: 70%;
+  margin: auto;
 }
 
 a {
@@ -144,6 +166,8 @@ a {
 }
 
 .nav {
+  width: 80%;
+  margin: auto;
   padding: 2em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -193,5 +217,66 @@ a {
 .nav .nav-right .avatar {
   height: 3em;
   margin-left: 2em;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 4em;
+}
+
+.product {
+  height: 28em;
+  border-radius: 12px;
+}
+
+.product-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 40%;
+}
+
+.product-info p, .product-info h1 {
+  margin: 0.5em 0 0.5em 0;
+}
+
+.product-info .price-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.product-info .price-info .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product-info .price-info .price .background {
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 3em;
+  margin-left: 1em;
+  background-color: #ffede0;
 }
 /*# sourceMappingURL=index.css.map */

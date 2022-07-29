@@ -14,10 +14,27 @@ h1 {
   font-weight: 700;
 }
 
+h2 {
+  font-size: $fontMdLrg;
+  font-weight: 700;
+}
+
 a {
   text-decoration: none;
   color: $clrDarkGrayBlue;
   &:hover {
     color: $clrDarkBlue;
   }
+}
+
+.accent {
+  color:$clrOrange;
+}
+
+span {
+  font-weight: $fontWeightBold;
+}
+
+.label {
+  letter-spacing: 2px;
 }
