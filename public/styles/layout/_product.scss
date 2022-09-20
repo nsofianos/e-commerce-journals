@@ -13,17 +13,25 @@ main {
   display: flex;
   flex-direction: column;
   width:40%;
+  margin-left:3em;
+  padding-top:3em;
 
   p, h1 {
     margin:0.5em 0 0.5em 0;
   }
 
+  //price / discount info
   .price-info {
     display:flex;
     flex-direction: column;
 
+    .old-price {
+      margin-top: 0.5em;
+    }
+
     .price {
       display: flex;
+      margin-top:1em;
 
       .background {
         border-radius: 8px;
@@ -33,6 +41,43 @@ main {
         width:3em;
         margin-left:1em;
         background-color: $clrPaleOrange;
+      }
+    }
+  }
+
+  // purchase / cart buttons 
+  .purchase-buttons {
+    display: flex;
+    margin-top: 2em;
+    
+    .purchase-amount {
+      height: 48px;
+      border-radius: 10px;
+      width:40%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background-color: $clrLightGrayBlue;
+      margin-right: 1em;
+
+      button {
+        height: 50%;
+      }
+    }
+
+    .add-cart {
+      background-color: $clrOrange;
+      color: $clrWhite;
+      border-radius: 10px;
+      width:60%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        filter: brightness(0) invert(1);
+        height: 15px;
+        margin-right: 0.5em;
       }
     }
   }

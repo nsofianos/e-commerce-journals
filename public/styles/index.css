@@ -152,6 +152,11 @@ span {
   letter-spacing: 2px;
 }
 
+.sale {
+  text-decoration: line-through;
+  color: #b6bcc8;
+}
+
 body {
   background-color: white;
 }
@@ -242,6 +247,8 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 40%;
+  margin-left: 3em;
+  padding-top: 3em;
 }
 
 .product-info p, .product-info h1 {
@@ -258,10 +265,15 @@ main {
           flex-direction: column;
 }
 
+.product-info .price-info .old-price {
+  margin-top: 0.5em;
+}
+
 .product-info .price-info .price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 1em;
 }
 
 .product-info .price-info .price .background {
@@ -278,5 +290,65 @@ main {
   width: 3em;
   margin-left: 1em;
   background-color: #ffede0;
+}
+
+.product-info .purchase-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2em;
+}
+
+.product-info .purchase-buttons .purchase-amount {
+  height: 48px;
+  border-radius: 10px;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #f7f8fd;
+  margin-right: 1em;
+}
+
+.product-info .purchase-buttons .purchase-amount button {
+  height: 50%;
+}
+
+.product-info .purchase-buttons .add-cart {
+  background-color: #ff7d1a;
+  color: white;
+  border-radius: 10px;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-info .purchase-buttons .add-cart img {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+  height: 15px;
+  margin-right: 0.5em;
+}
+
+button {
+  background-color: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  color: #ff7d1a;
+  font-family: "Kumbh Sans", sans-serif;
+  height: 48px;
 }
 /*# sourceMappingURL=index.css.map */
