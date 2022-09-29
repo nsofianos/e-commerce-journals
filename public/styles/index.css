@@ -172,15 +172,17 @@ a {
 
 .nav {
   width: 80%;
+  height: 100px;
   margin: auto;
-  padding: 2em;
+  padding-bottom: 2em;
+  padding-top: 2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-bottom: 1px solid #f7f8fd;
+  border-bottom: 1px solid #e3e3e3;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -204,6 +206,37 @@ a {
 
 .nav .nav-left .links a {
   margin-left: 2em;
+  position: relative;
+}
+
+.nav .nav-left .links a:after {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 56px;
+  left: 0;
+  right: 0;
+  border-bottom: solid 3px #ff7d1a;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+}
+
+.nav .nav-left .links a.selected {
+  color: #1d2025;
+}
+
+.nav .nav-left .links a.selected:after {
+  -webkit-transform: scaleX(1.2);
+          transform: scaleX(1.2);
+}
+
+.nav .nav-left .links a:hover:after {
+  -webkit-transform: scaleX(1.2);
+          transform: scaleX(1.2);
 }
 
 .nav .nav-right {
@@ -378,13 +411,13 @@ button {
   opacity: 0.3;
 }
 
-.container {
+.border-container {
   width: 6em;
   border-radius: 14px;
   border: 2px solid white;
 }
 
-.container.selected {
+.border-container.selected {
   border: 2px solid #ff7d1a;
 }
 /*# sourceMappingURL=index.css.map */

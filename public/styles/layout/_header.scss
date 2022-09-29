@@ -1,11 +1,14 @@
 .nav {
   width: 80%;
+  height:100px;
   margin:auto;
-  padding:2em;
+  padding-bottom:2em;
+  padding-top:2em;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid $clrLightGrayBlue;
-  align-items:center;
+  border-bottom: 1px solid $clrLightGray;
+  align-items: center;
+
 
   .nav-left {
     display: flex;
@@ -16,6 +19,28 @@
       display: flex;
       a{
         margin-left:2em;
+        position:relative;
+
+        &:after {
+          display:block;
+          content: '';
+          position:absolute;
+          top:56px;
+          left: 0;
+          right: 0;
+          border-bottom: solid 3px $clrOrange;  
+          transform: scaleX(0);  
+          transition: transform 250ms ease-in-out;
+         }
+         &.selected {
+          color:$clrDarkBlue;
+          &:after {
+            transform: scaleX(1.2);
+           }
+        }
+        &:hover:after {
+           transform: scaleX(1.2); 
+        }
       }
     }
   }
