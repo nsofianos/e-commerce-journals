@@ -233,9 +233,19 @@ main {
   margin-top: 4em;
 }
 
-.product {
+.product-gallery .product {
   height: 28em;
   border-radius: 12px;
+}
+
+.product-gallery .product-thumbnails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 2em;
 }
 
 .product-info {
@@ -350,5 +360,31 @@ button {
   color: #ff7d1a;
   font-family: "Kumbh Sans", sans-serif;
   height: 48px;
+}
+
+.thumbnail {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.thumbnail:hover {
+  opacity: 0.5;
+}
+
+.thumbnail.selected {
+  opacity: 0.3;
+}
+
+.container {
+  width: 6em;
+  border-radius: 14px;
+  border: 2px solid white;
+}
+
+.container.selected {
+  border: 2px solid #ff7d1a;
 }
 /*# sourceMappingURL=index.css.map */

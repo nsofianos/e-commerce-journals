@@ -4,9 +4,18 @@ main {
   margin-top:4em;
 }
 
-.product {
-  height: 28em;
-  border-radius: 12px;
+.product-gallery {
+
+  .product {
+    height: 28em;
+    border-radius: 12px;
+  }
+
+  .product-thumbnails {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+  }
 }
 
 .product-info {
